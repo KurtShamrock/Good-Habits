@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "515448276129",
+    "project_id": "gud-habits",
+    "storage_bucket": "gud-habits.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515448276129:android:502105a9fbea34be065ce0",
+        "android_client_info": {
+          "package_name": "com.example.goodhabits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515448276129-f4oodebk69kf6fr2j88bu2e6dbcti68s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsWo7_W-u_3Wj4YnZ1vSq8U7OckDNEsVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515448276129-f4oodebk69kf6fr2j88bu2e6dbcti68s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515448276129:android:e09c70805531c6c5065ce0",
+        "android_client_info": {
+          "package_name": "com.examples.goodhabits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515448276129-f4oodebk69kf6fr2j88bu2e6dbcti68s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsWo7_W-u_3Wj4YnZ1vSq8U7OckDNEsVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515448276129-f4oodebk69kf6fr2j88bu2e6dbcti68s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
