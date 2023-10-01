@@ -1,31 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipToOutline="true"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:background="@drawable/rectangle_15" />
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal|top"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/sign_in"
+        android:textStyle="bold" />
 
-    <Button
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/email_or_ph"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:hint="@string/email_or_ph" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/password"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:hint="@string/password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="415dp"
+        android:background="@drawable/rectangle_4"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Sign in"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="375dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="top"
+        android:text="@string/forgot_your"
+        android:textAppearance="@style/forgot_your" />
+
+    <View
+        android:layout_width="142.5dp"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="505.5dp"
+        android:background="@drawable/line_1" />
+
+    <TextView
+        android:layout_width="17dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="495dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="top"
+        android:text="@string/or"
+        android:textAppearance="@style/or" />
+
+    <View
+        android:layout_width="140.5dp"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="235.5dp"
+        android:layout_marginTop="505.5dp"
+        android:background="@drawable/line_2" />
+
+    <ImageView
         android:id="@+id/btnGGLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login with Google"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
+        android:layout_width="184.89dp"
+        android:layout_height="25.22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/social" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="600dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="top"
+        android:text="@string/don_t_have_"
+        android:textAppearance="@style/don_t_have_" />
+</RelativeLayout>

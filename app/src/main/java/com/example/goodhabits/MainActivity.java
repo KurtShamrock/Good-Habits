@@ -3,6 +3,7 @@ package com.example.goodhabits;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,14 +11,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -32,7 +33,9 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button loginBtn;
+    private ImageView loginBtn;
+    private AppCompatButton signInBtn;
+    private EditText edtEmail, edtPassword;
     FirebaseAuth auth;
     FirebaseDatabase db;
     GoogleSignInClient GSIC;
@@ -43,11 +46,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences sharedRef = MainActivity.this.getSharedPreferences("user-Storage",Context.MODE_PRIVATE);
-        if(sharedRef.getBoolean("hasLogin",false)==true){
+        SharedPreferences sharedRef = MainActivity.this.getSharedPreferences("user-Storage", Context.MODE_PRIVATE);
+        if (sharedRef.getBoolean("hasLogin", false) == true) {
             goToNextActivity();
         }
         loginBtn = findViewById(R.id.btnGGLogin);
+        signInBtn = findViewById(R.id.btnSignIn);
+        edtEmail = findViewById(R.id.edtEmail);
+        edtPassword = findViewById(R.id.edtPassword);
 
         auth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance();
@@ -56,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
-        GSIC = GoogleSignIn.getClient(this,gso);
+        GSIC = GoogleSignIn.getClient(this, gso);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,16 +70,34 @@ public class MainActivity extends AppCompatActivity {
                 googleSignIn();
             }
         });
+
+        signInBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email = edtEmail.getText().toString().trim();
+                String password = edtPassword.getText().toString().trim();
+                //
+                if (true){
+                    Intent intent = new Intent(MainActivity.this, Home.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "Tài khoản hoặc mật khẩu không chính xác!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
-    private void googleSignIn(){
+
+    private void googleSignIn() {
         Intent intent = GSIC.getSignInIntent();
-        startActivityForResult(intent,RC_SIGN_IN);
+        startActivityForResult(intent, RC_SIGN_IN);
     }
-    private void goToNextActivity(){
+
+    private void goToNextActivity() {
         Intent intent = new Intent(MainActivity.this, Home.class);
         SharedPreferences prefs = getSharedPreferences("user-Storage", MODE_PRIVATE);
-        intent.putExtra("user_name",prefs.getString("name",""));
-        intent.putExtra("id_token", prefs.getString("idToken",""));
+        intent.putExtra("user_name", prefs.getString("name", ""));
+        intent.putExtra("email", prefs.getString("email", ""));
+        intent.putExtra("id_token", prefs.getString("idToken", ""));
         startActivity(intent);
     }
 
@@ -81,47 +105,44 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == RC_SIGN_IN){
+        if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
-                GoogleSignInAccount  acc = task.getResult(ApiException.class);
-                Log.i("Tag",acc.getEmail());
+                GoogleSignInAccount acc = task.getResult(ApiException.class);
+                Log.i("Tag", acc.getEmail());
                 firebaseAuth(acc.getIdToken());
-            }
-            catch(Exception e)
-            {
-                Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
-                Log.e("ERR",e.toString());
+            } catch (Exception e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+                Log.e("ERR", e.toString());
             }
 
         }
     }
 
-    private void firebaseAuth(String idToken){
-        AuthCredential credential = GoogleAuthProvider.getCredential(idToken,null);
+    private void firebaseAuth(String idToken) {
+        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         auth.signInWithCredential(credential)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                            @Override
                                            public void onComplete(@NonNull Task<AuthResult> task) {
 
-                                               if(task.isSuccessful()){
+                                               if (task.isSuccessful()) {
                                                    FirebaseUser user = auth.getCurrentUser();
                                                    SharedPreferences prefs = getSharedPreferences("user-Storage", MODE_PRIVATE);
                                                    SharedPreferences.Editor editor = prefs.edit();
                                                    editor.putString("email", user.getEmail());
                                                    editor.putString("name", user.getDisplayName());
-                                                   editor.putString("idToken",idToken);
-                                                   editor.putBoolean("hasLogin",true);
+                                                   editor.putString("idToken", idToken);
+                                                   editor.putBoolean("hasLogin", true);
                                                    editor.apply();
-                                                   HashMap<String,Object> map = new HashMap<>();
-                                                   map.put("id",user.getUid());
-                                                   map.put("name",user.getDisplayName());
-                                                   map.put("profile",user.getPhotoUrl().toString());
+                                                   HashMap<String, Object> map = new HashMap<>();
+                                                   map.put("id", user.getUid());
+                                                   map.put("name", user.getDisplayName());
+                                                   map.put("profile", user.getPhotoUrl().toString());
                                                    db.getReference().child("users").child(user.getUid()).setValue(map);
 
                                                    goToNextActivity();
-                                               }
-                                               else {
+                                               } else {
                                                    Toast.makeText(MainActivity.this, "something wrong!", Toast.LENGTH_SHORT).show();
                                                }
                                            }

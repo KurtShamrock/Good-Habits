@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Setting.SettingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:clipToOutline="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rectangle_15" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserSetting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/img_user" />
+
+        <TextView
+            android:id="@+id/tvFullNameSetting"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="164dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal|top"
+            android:text="@string/b_i_l_d_ng"
+            android:textAppearance="@style/b_i_l_d_ng"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="249dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:text="@string/name_"
+                android:textAppearance="@style/name_" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtFullNameSetting"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_1"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/b_i_l_d_ng"
+                android:textAppearance="@style/name_" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgEditSetting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="285dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/edit" />
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="325dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:text="@string/email"
+                android:textAppearance="@style/name_" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmailSetting"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_1"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/leedung201_"
+                android:textAppearance="@style/name_" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/rectangle_04"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/ng_xu_t"
+            android:textAppearance="@style/ng_xu_t"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDeleteAccount"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/rectangle_04"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/x_a_t_i_kho"
+            android:textAppearance="@style/x_a_t_i_kho"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

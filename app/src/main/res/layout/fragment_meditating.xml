@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002230"
+    tools:context=".ui.Meditating.MeditatingFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/rectangle_13" />
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="127dp"
+        android:background="@drawable/rectangle_10" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="55dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="It's time to meditate"
+        android:textAppearance="@style/on_going"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="68dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/meditate" />
+
+        <TextView
+            android:layout_width="183dp"
+            android:layout_height="54dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="MEDITATE"
+            android:textSize="36sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Timer:"
+        android:textAppearance="@style/on_going"/>
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rectangle_1" />
+
+    <Spinner
+        android:id="@+id/spinnerMinutes"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="285dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Sound:"
+        android:textAppearance="@style/on_going"/>
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/rectangle_1" />
+
+    <Spinner
+        android:id="@+id/spinnerSound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:textAlignment="center" />
+
+<!--    <View-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="260dp"-->
+<!--        android:layout_marginBottom="70dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="@drawable/rectangle_05"/>-->
+
+<!--    <View-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:layout_marginEnd="75dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="@drawable/boder_timer"/>-->
+
+    <LinearLayout
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/playBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_media_play"
+                tools:src="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/stopBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@android:drawable/checkbox_off_background" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            tools:text="Hello World"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="65sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

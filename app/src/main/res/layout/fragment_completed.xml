@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002230"
+    android:clipToOutline="true"
+    tools:context=".ui.Todo.CompletedFragment">
+
+    <View
+        android:layout_width="67dp"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/img_streak" />
+
+    <TextView
+        android:id="@+id/tvCompleted"
+        android:layout_width="250dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="top"
+        android:text="Hoàn thành Task Todo!!!"
+        android:textAppearance="@style/ho_n_th_nh_" />
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="219dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="235dp"
+        android:background="@drawable/rectangle_12" />
+
+    <View
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="282dp"
+        android:background="@drawable/ticker" />
+
+    <View
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="282dp"
+        android:background="@drawable/ticker" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="282dp"
+        android:background="@drawable/white_ticker" />
+
+    <TextView
+        android:id="@+id/tvDay1"
+        android:layout_width="35dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="257dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="top"
+        android:text="CN"
+        android:textAppearance="@style/cn" />
+
+    <TextView
+        android:id="@+id/tvDay2"
+        android:layout_width="35dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="257dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="top"
+        android:text="T2"
+        android:textAppearance="@style/cn" />
+
+    <TextView
+        android:id="@+id/tvDay3"
+        android:layout_width="35dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="257dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="top"
+        android:text="T3"
+        android:textAppearance="@style/t3" />
+
+    <TextView
+        android:id="@+id/tvCongratulation"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="345dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal|top"
+        android:text="Hoàn thành 1 Task còn lại để hoàn thành
+Streak tổng ngày hôm nay!"
+        android:textAppearance="@style/t3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOK"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="475dp"
+        android:background="@drawable/rectangle_4"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

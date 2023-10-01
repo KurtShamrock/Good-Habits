@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:clipToOutline="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFEBEE" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#FF5C00" />
+        <!-- Cirlce Image-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserProfile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/ellipse_18" />
+
+        <!--    Name-->
+        <TextView
+            android:id="@+id/tvFullnameProfile"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="66dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/b_i_l_d_ng"
+            android:textAppearance="@style/bld"
+            android:textStyle="bold" />
+
+        <!--        Streak-->
+        <View
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="181dp"
+            android:background="@drawable/rectangle_07" />
+        <!-- count 7 day streak-->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="191dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="191dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/no_star" />
+
+        <ImageView
+            android:id="@+id/Count7DayStreak_7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="186dp"
+            android:background="@drawable/star"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/streak"
+            android:textAppearance="@style/streak"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="150dp">
+
+            <View
+                android:layout_width="18.75dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_streak" />
+
+            <TextView
+                android:id="@+id/tvCurrentStreakProfile"
+                android:layout_width="30dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/some_id"
+                android:textAppearance="@style/some_id"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--        Highest streak-->
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="261dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/highest_streak"
+            android:textAppearance="@style/highest_ste"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="282dp"
+            android:background="@drawable/rectangle_07"
+            android:elevation="4dp" />
+
+        <LinearLayout
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="251dp">
+
+            <View
+                android:layout_width="18.75dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_streak" />
+
+            <TextView
+                android:id="@+id/tvHighestStreakProfile"
+                android:layout_width="30dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:text="@string/_100"
+                android:textAppearance="@style/some_id"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/HighestStreakBar"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="282dp"
+            android:background="@drawable/rectangle_08"
+            android:elevation="4dp" />
+
+        <!--        Daily Mission-->
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="362dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/daily_mission"
+            android:textAppearance="@style/daily_missi"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="210dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="383dp"
+            android:background="@drawable/rectangle_05" />
+        <!--Reading-->
+        <View
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="387dp"
+            android:background="@drawable/rectangle_06" />
+
+        <LinearLayout
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="387dp">
+
+            <View
+                android:layout_width="18.75dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_streak" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/ellipse_13"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="341dp"
+            android:layout_marginTop="399dp"
+            android:background="@drawable/ellipse_15" />
+
+        <TextView
+            android:id="@+id/reading"
+            android:layout_width="65dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90.09dp"
+            android:layout_marginTop="401dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/reading"
+            android:textAppearance="@style/readingProfile"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgReadingProfile"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="399dp"
+            android:background="@drawable/ticker"
+            android:visibility="gone" />
+
+        <!-- Meditating-->
+        <View
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="437dp"
+            android:background="@drawable/rectangle_06" />
+
+        <LinearLayout
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="437dp">
+
+            <View
+                android:layout_width="18.75dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_streak" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="451dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/meditating"
+            android:textAppearance="@style/readingProfile"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="449dp"
+            android:background="@drawable/ellipse_15" />
+
+        <ImageView
+            android:id="@+id/imgMeditatingProfile"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="449dp"
+            android:background="@drawable/ticker"
+            android:visibility="gone" />
+
+        <!-- Doing Exercise-->
+        <View
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="487dp"
+            android:background="@drawable/rectangle_06" />
+
+        <LinearLayout
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="487dp">
+
+            <View
+                android:layout_width="18.75dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_streak" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90.09dp"
+            android:layout_marginTop="501dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/doing_exercise"
+            android:textAppearance="@style/readingProfile"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="499dp"
+            android:background="@drawable/ellipse_15" />
+
+        <ImageView
+            android:id="@+id/imgDoingExerciseProfile"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="499dp"
+            android:background="@drawable/ticker"
+            android:visibility="gone" />
+        <!-- Checking to do-->
+        <View
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="537dp"
+            android:background="@drawable/rectangle_06" />
+
+        <LinearLayout
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="537dp">
+
+            <View
+                android:layout_width="18.75dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/img_streak" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90.09dp"
+            android:layout_marginTop="551dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/checking_todo"
+            android:textAppearance="@style/readingProfile"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="549dp"
+            android:background="@drawable/ellipse_15" />
+
+        <ImageView
+            android:id="@+id/imgCheckingTodoProfile"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="549dp"
+            android:background="@drawable/ticker"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Greeting.GreetingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/rectangle_01" />
+
+        <TextView
+            android:id="@+id/hello_user"
+            android:layout_width="284dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="51dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/hello_b_i_l"
+            android:textAppearance="@style/hello_b_i_l"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="85dp"
+            android:background="@drawable/img_streak" />
+
+        <TextView
+            android:id="@+id/tvCurrentStreakGreeting"
+            android:layout_width="25dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="332dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:text="@string/some_id"
+            android:textAppearance="@style/some_id"
+            android:textStyle="bold" />
+        <!--    Exercise-->
+        <ImageView
+            android:id="@+id/btnExercise"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rectangle_03" />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="294dp"
+            android:layout_marginEnd="225dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/exercise"
+            android:textAppearance="@style/exercise" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="248dp"
+            android:background="@drawable/exercise" />
+        <!-- To do List-->
+        <ImageView
+            android:id="@+id/btnTodo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/rectangle_03" />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="475dp"
+            android:layout_marginEnd="225dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/todo_list"
+            android:textAppearance="@style/todo_list" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="424dp"
+            android:background="@drawable/todo" />
+        <!-- Reading-->
+        <ImageView
+            android:id="@+id/btnReading"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rectangle_03" />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="294dp"
+            android:layout_marginEnd="47dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/reading"
+            android:textAppearance="@style/reading" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="238dp"
+            android:background="@drawable/reading" />
+        <!--Meditate-->
+        <ImageView
+            android:id="@+id/btnMeditate"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/rectangle_03" />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="475dp"
+            android:layout_marginEnd="47dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/meditate"
+            android:textAppearance="@style/meditate" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="424dp"
+            android:background="@drawable/meditate" />
+
+    </RelativeLayout>
+
+</FrameLayout>

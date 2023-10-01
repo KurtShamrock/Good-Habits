@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">Good Habits</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_your">Forgot Your Password?</string>
+    <string name="email_or_ph">Email or Phone number</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_">Don\'t Have an Account, Sign Up</string>
+    <string name="or">Or</string>
+    <string name="hello_b_i_l">Hello, Bùi Lê Dũng</string>
+    <string name="some_id">12</string>
+    <string name="exercise">Exercise</string>
+    <string name="todo_list">Todo List</string>
+    <string name="reading">Reading</string>
+    <string name="meditate">Meditate</string>
+    <string name="b_i_l_d_ng">Bùi Lê Dũng </string>
+    <string name="name_">Name:</string>
+    <string name="leedung201_">leedung201@gmail.com</string>
+    <string name="ng_xu_t">Đăng xuất</string>
+    <string name="x_a_t_i_kho">Xóa tài khoản</string>
+    <string name="highest_streak">Highest Streak:</string>
+    <string name="streak">Streak</string>
+    <string name="daily_mission">Daily Mission</string>
+    <string name="email">Email:</string>
+    <string name="_100">100</string>
+    <string name="checking_todo">Checking Todo</string>
+    <string name="doing_exercise">Doing Exercise</string>
+    <string name="meditating">Meditating</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reading_online">Reading online</string>
+    <string name="done">Done</string>
+    <string name="on_going">On Going</string>
+    <string name="leisurely">Leisurely</string>
+    <string name="important">Important</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="nomarl">Nomarl</string>
+    <string name="very_important">Very Important</string>
+    <string name="priority">Priority:</string>
+    <string name="ch_n">Chọn</string>
+    <string name="ch_n_ng_y">Chọn ngày</string>
+    <string name="due_date">Due Date:</string>
+    <string name="nh_p_n_i_dung">Nhập nội dung</string>
+    <string name="content">Content:</string>
+    <string name="completedMeditation">Hoàn thành Task Meditate\!\!\!</string>
 </resources>
